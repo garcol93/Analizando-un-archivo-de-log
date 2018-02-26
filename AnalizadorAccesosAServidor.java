@@ -25,6 +25,7 @@ public class AnalizadorAccesosAServidor
      */
     public void analizarArchivoDeLog(String nombreLog)
     {
+        listaDeAcceso.clear();
         try {
             File archivo = new File(nombreLog);
             Scanner sc = new Scanner(archivo);
